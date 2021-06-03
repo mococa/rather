@@ -4,6 +4,17 @@
     padding:0;
     font-family: 'arial'
 }
+a:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
 main,.flex-vr{
     display: flex;
     flex-flow:column;

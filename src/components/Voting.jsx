@@ -28,7 +28,7 @@ function Voting(props) {
             <p className= {voto===null ? 'none' : (voto==0 ? "voted green-color" : "voted blue-color")} >
                 {voto!==null?voteText:""}
             </p>
-            <div className="cards-vote flex-hr">
+            <div className="cards-vote">
                 <button  className="clickable" onClick={()=>vote(1)} disabled={voto === null?"":"true"}>{props.data.questions[0]}</button>
                 <h1 style={{color:'white', alignSelf:'center'}}>{translate().or}</h1>
                 <button className="clickable" onClick={()=>vote(2)} disabled={voto === null?"":"true"}>{props.data.questions[1]}</button>
@@ -64,7 +64,7 @@ function Voting(props) {
             case 'en':
             default: 
                 phrases['first'] = "You're the first one who would rather"
-                phrases['rather'] = "You would rather.."
+                phrases['rather'] = "You would rather..."
                 phrases['among'] = "Among"
                 phrases['people'] = "people"
                 phrases['or'] = "or"

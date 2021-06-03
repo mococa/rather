@@ -4,6 +4,7 @@ import './styles/default.css';
 import Header from './components/Header.jsx'
 import Voting from './components/Voting.jsx'
 import CommentSection from './components/CommentSection.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
     const [data, setData] = useState(null);
@@ -50,6 +51,7 @@ function App() {
                 <Voting fetch_data={fetch_data} data={data?data:null}/>
                 <CommentSection data={data?data:null}/>
             </main>
+            <Footer/>
 
         </>
     );

@@ -1,0 +1,26 @@
+@media (max-width: 500px) {
+  .header {
+    padding: 0 20px;
+  }
+  .header nav a {
+    padding: 0 5px;
+  }
+  .vote-title {
+      font-size: 34px;
+      text-align: center;
+      padding: 0 20px;
+  }
+  .cards-vote{
+    flex-flow:column;
+    padding: 0 20px;
+  }
+  .cards-vote button{
+    width:unset;
+    height:150px;
+  }
+  .voting{
+    height: calc(100vh - 80px + 16px + 20px);
+    margin-bottom: 25px;
+
+  }
+}

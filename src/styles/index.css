@@ -10,7 +10,25 @@ code {
     background-color: #000000;
     height: 80px;
     margin-bottom:16px;
+    color:white;
+    place-items: center;
+    padding: 0 80px;
+    justify-content: space-between;
 }
+.header .logo{
+    font-size:30px;
+}
+.header nav{
+    display: flex;
+    gap:10px;
+    height: 100%;
+}
+.header nav a{
+    display: flex;
+    place-items: center;
+    padding: 0 20px;
+}
+
 .voting {
     gap:25px;
     place-items: center;
@@ -24,11 +42,17 @@ code {
 
 }
 .voted{
-    display: flex;
     font-size: 22px;
+    text-transform: lowercase;
+    text-align: center;
+    padding: 0 20px;
 }
+.voted:first-letter {text-transform: uppercase}
 .cards-vote{
+    display: flex;
+    flex-flow: row;
     gap:15px;
+    
 }
 .cards-vote button:nth-of-type(1){
     background: rgb(144, 256, 144);
@@ -49,7 +73,7 @@ code {
     border-radius: 10px 10px 0 0;
     background-color: #222;
     color:white;
-    padding:20px;
+    padding:20px 20px 80px;
     gap:15px;
     
 }
@@ -68,4 +92,13 @@ code {
 }
 .comment img{
     height:70px;
+}
+
+
+
+footer{
+    color:white;
+    height:80px;
+    padding: 5px 20px;
+    background-color: black;
 }

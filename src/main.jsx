@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './styles/index.css'
+import './styles/mobile_styles.css'
+
 import App from './App'
 
 
