@@ -13,6 +13,7 @@
   .cards-vote{
     flex-flow:column;
     padding: 0 20px;
+    width:80%;
   }
   .cards-vote button{
     width:unset;
@@ -22,5 +23,24 @@
     height: calc(100vh - 80px + 16px + 20px);
     margin-bottom: 25px;
 
+  }
+  .add-form{
+      margin: 0 auto;
+      width:calc(100% - 2*20px);
+      padding:20px;
+      left:0;
+  }
+  .lan-select{
+        right:0;
+        width: 80%;
+  }
+  .lan-select li {
+      padding: 8px 0;
+  }
+  .lan-select li img{
+      width:30px;
+  }
+  .main-message{
+      margin: 20px;
   }
 }

@@ -6,6 +6,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.main-message{
+    color:white;
+    margin:20px 80px;
+}
 .header{
     background-color: #000000;
     height: 80px;
@@ -26,8 +30,68 @@ code {
 .header nav a{
     display: flex;
     place-items: center;
+}
+.header nav a svg{
     padding: 0 20px;
 }
+.lan-select{
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-flow:column;
+    color:black;
+    
+    width:180px;
+
+    top:80px;
+    gap:10px;
+    padding:10px;
+    z-index: 10;
+    right:80px;
+}
+.lan-select li{
+    display: flex;
+    flex-flow:row;
+    gap:5px;
+    background-color:white;
+    padding: 5px 0;
+}
+.lan-select li:hover{
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+.add-form{
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-flow:column;
+    color:black;
+    
+    width:230px;
+    min-height: 245px;
+    top:80px;
+    gap:10px;
+    padding:10px;
+    z-index: 10;
+    right:160px;
+}
+.add-form button{
+    padding: 10px;
+    border:none;
+    color:white;
+    background-color:tomato;
+}
+
+.add-form li{
+    display: flex;
+    flex-flow: column;
+    gap:2px;
+}
+.add-form > span{
+    font-weight: bold;
+}
+
 
 .voting {
     gap:25px;
@@ -68,6 +132,26 @@ code {
     border: none;
     cursor: pointer;
     padding: 50px;
+    display:flex;
+    flex-flow: column;
+    place-items: center;
+    place-content: center;
+}
+.share{
+    color:white;
+    display:flex;
+    gap:5px;
+    cursor: pointer;
+    place-items:center;
+}
+.next-btn{
+    background: tomato;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    
 }
 .comment-section{
     border-radius: 10px 10px 0 0;
@@ -82,6 +166,28 @@ code {
     font-weight: 900;
     font-family: 'Roboto';
     
+}
+.my-comment{
+    gap:10px;
+    max-width: 500px;
+}
+.my-comment label{
+    display: flex;
+    flex-flow: row;
+    flex:1;
+    gap: 5px;
+    place-items: center;
+}
+.my-comment label:nth-of-type(2){
+    place-items: flex-start;
+    flex-flow: column;
+}
+.my-comment label input, .my-comment label textarea{
+    display: flex;
+    width: calc(100% - 10px);
+    flex:1;
+    resize: none;
+    padding:5px;
 }
 .comment{
     height:70px;

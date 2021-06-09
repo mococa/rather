@@ -7,12 +7,21 @@ import Voting from './components/Voting.jsx'
 import CommentSection from './components/CommentSection.jsx'
 import Footer from './components/Footer.jsx'
 
-function App() {
+function App(props) {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [vote_result, set_vote_result] = useState(null)
 
-    
+    const fetch_question = (async()=>{
+        setLoading(true);
+        const api_url = `https://api.rather.ml/q/${props.match.params.questionId}`
+        const response = await fetch(api_url)
+        const json = await response.json()
+        console.log(json)
+        setData(null)
+        setData(json);
+        setLoading(false);
+    })
     const fetch_data = (async () =>{
         setLoading(true);
         const already_seen_raw = localStorage.getItem('already_seen') || []
@@ -33,7 +42,7 @@ function App() {
     });
     
     useEffect(async()=>{
-        fetch_data()
+        fetch_question()
     }, [])
     
     if(loading) {

@@ -6,8 +6,8 @@ function Comment(props) {
         <div className="comment flex-hr">
             <img src="src/img/user.png"></img>
             <div className="flex-vr">
-                <b>{props.comment_data}</b>
-                <span>{props.comment_data}</span>
+                <b className={props.comment_data.voted_in_left?"green-color":"blue-color"}>{props.comment_data.name}</b>
+                <span>{props.comment_data.comment}</span>
             </div>
         </div>
     );
